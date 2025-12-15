@@ -1,1 +1,100 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問合せフォーム</title>
+
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header id="top">
+    <h2>世界一甘いお店</h2>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#top">トップ</a></li>
+    <li><a href="#news">新着情報</a></li>
+    <li><a href="#recommend">おすすめのスイーツ</a></li>
+    <li><a href="#cotact">お問合せ</a></li>
+  </ul>
+</nav>
+
+<section id="news">
+
+</section>
+
+<section id="recommend">
+
+</section>
+
+<main id="contact">
+  
+   <table class="contact-table">
+           <tr>
+              <th>お名前</th>
+              <td><input type="text" name="name" size="40"></td>
+           </tr>
+
+           <tr>
+               <th>お近くのお店</th>
+               <td>
+                  <select name="shop">
+                    <option value="北海道・東北">北海道・東北</option>
+                    <option value="関東">関東</option>
+                    <option value="中部">中部</option>
+                    <option value="関西">関西</option>
+                    <option value="中国・四国">中国・四国</option>
+                    <option value="九州・沖縄">九州・沖縄</option>
+                  </select>
+               </td>
+           </tr>
+
+           <tr>
+                
+               <th>電話</th>
+               <td><input type="text" name="tel" size="40"></td>
+           </tr>
+
+           <tr>
+               <th>電話番号</th>
+               <td><input type="text" name="phon number" size="40"></td>
+           </tr>
+
+           <tr>
+               <th>メールアドレス</th>
+               <td><input type="email" name="email" size="40"></td>
+           </tr>
+
+           <tr>
+               <th>お問い合わせ種別</th>
+               <td>
+                 <label>
+                    <input type="radio" name="category" value="商品について">商品について
+                 </label>
+                 
+                 <label>
+                    <input type="radio" name="category" value="従業員について">従業員について
+                 </label>
+               </td>
+           </tr>
+
+           <tr>
+                <th>お問い合わせ内容</th>
+                <td><textarea name="message" cols="30" rows="5"  placeholder="詳細を入力してください"></textarea></td>
+           </tr>
+        </table>
+
+        <button type="submit">送信</button>
+    
+</main>
+
+</div>
+
+</body>
+
+</html>
