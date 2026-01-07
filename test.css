@@ -13,6 +13,42 @@ body {
     color: #3b2f2f;
 }
 
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+}
+
+.sidebar {
+    width: 180px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar li {
+   margin-bottom: 16px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #3b2f2f;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.main-contact {
+    flex: 1;
+}
 
 header h2 {
     text-align: center;
@@ -22,18 +58,6 @@ header h2 {
     letter-spacing: 3px;
 }
 
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    background-color: #e8e0d2;
-    border-top: 3px solid #6b4f41;
-    border-bottom: 3px solid #6b4f41;
-}
 
 nav ul li a {
     text-decoration: none;
@@ -46,15 +70,29 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.sidebar {
+    width: auto;
+}
+
+.content {
+    flex: 1;
+}
+
+.right-bar {
+    width: 200px;
+    height: 400px;
+    background-color: #e8e0d2;
+}
+
 .contact-table {
     border: 4px solid #6b4f41;
     border-collapse: collapse;
     width: 600px;
-    margin: 0 auto;
+    margin: 0;
     margin-top: 16px;
     margin-bottom: 16px;
     background-color: #faf7f0;
-    box-shadow: 0 0 8px raba(0,0,0,0.15);
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
 }
 
 .contact-table th,
@@ -113,4 +151,11 @@ button {
 
 button:hover {
     background-color: #d8cabb;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
 }
